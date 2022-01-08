@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Josefin+Sans:ital,wght@0,300;1,500&family=Kalam:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Mai&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="form_validator.css">
+</head>
+<body>
+    <div class="contact-us">
+        <h2 id="hello">Form Validation</h2>
+        <form action="#" novalidate  autocomplete="off">  
+
+            <!-- Here Form is submitted to the same page by using action='#' and it is presently novalidate and we need to remove novalidate by using javascript -->
+          <label for="customerName">NAME <em>&#x2a;</em></label>
+          <input id="customerName" name="customerName"  type="text" />
+          <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+          <input id="customerEmail" name="customerEmail"  />
+          <label for="Password">PASSWORD <em>&#x2a;</em></label>
+          <input  id="pass" name="Password" type="password" /><span class="check_pass"></span>
+          <label for="Password">CONFIRM PASSWORD <em>&#x2a;</em></label>
+          <input  id="pass_confirm" name="Password" type="password" /><span class="check_pass"></span>
+          
+            <label for="customerPhone">PHONE <em>&#x2a;</em></label>
+            <div id="phn">
+            <input class="customerPhone" name="customerPhone" type="tel"  />
+            <span class="validity"></span>
+
+          </div>
+          <br><br><br><br>
+          
+          <!-- <label for="customerNote">YOUR MESSAGE <em>&#x2a;</em></label><textarea id="customerNote" name="customerNote" required="" rows="4"></textarea> -->
+          <h3>
+            Please provide all the information about your issue you can.
+          </h3>
+          <br>
+          <button id="customerOrder" type="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <script src="form_validator.js"></script>
+</body>
+</html>
